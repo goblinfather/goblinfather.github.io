@@ -576,14 +576,15 @@ p {
     width: 80px;
     height: 80px;
   }
+
+  .testimonial__speech-bubble {
+    order: 1;
+  }
+
   .testimonial__avatar:nth-child(even),
   .testimonial__avatar:nth-child(odd) {
     margin: 0;
     margin-bottom: 8px;
-  }
-
-  .testimonial__speech-bubble {
-    order: 1;
   }
 
   .arrow-up {
