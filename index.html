@@ -1,324 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Daniel's Portfolio</title>
-        <meta name="description" content="Portfolio for world-renowned software engineer Daniel">
-        <meta name="author" content="Daniel">
-        <link rel="icon" type="image/png" href="images/fabicon.png" />
-        <script src="https://kit.fontawesome.com/cc566baf68.js" crossorigin="anonymous"
-        ></script>   
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Taehun (Daniel) Ki — business transformation, data and AI enablement, and evidence-driven technology delivery. Based in Tokyo, Japan.">
+  <meta property="og:title" content="Taehun (Daniel) Ki | Business Technology & AI">
+  <meta property="og:description" content="Turning complex business problems into reliable technology, practical workflows and measurable outcomes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://goblinfather.github.io/">
+  <title>Taehun (Daniel) Ki — Business Technology & AI</title>
+  <link rel="canonical" href="https://goblinfather.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%2313292d'/%3E%3Cpath d='M15 18h17v5H20v23h-5zm23 0h5v12l11-12h6L47 32l13 14h-7L43 35v11h-5z' fill='%23c4f0df'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="#top" aria-label="Taehun Ki, home">TK<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#lab">Lab</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Change color theme" hidden> <span aria-hidden="true">◐</span> <span class="theme-label">Theme</span></button>
+  </div>
+</header>
+<main id="main">
+  <section class="hero wrap" id="top">
+    <div class="hero-main">
+      <p class="eyebrow"><span class="status-dot"></span> TOKYO, JAPAN · BUSINESS × TECHNOLOGY</p>
+      <h1>Taehun <span class="quiet">(Daniel)</span> Ki<span class="accent">.</span></h1>
+      <p class="role">Business Technology &amp; AI Enablement</p>
+      <p class="hero-copy">I turn complex operational problems into reliable data, automation and AI-enabled solutions — connecting business strategy, hands-on engineering and responsible delivery.</p>
+      <div class="actions"><a class="button primary" href="#lab">Explore my work <span aria-hidden="true">↘</span></a><a class="button secondary" href="https://www.linkedin.com/in/-ops/">LinkedIn <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <aside class="hero-aside" aria-label="Areas of focus">
+      <div class="hero-index"><span>OPERATING MODEL</span><span>01 — 04</span></div>
+      <svg viewBox="0 0 320 252" role="img" aria-labelledby="diagram-title diagram-desc">
+        <title id="diagram-title">Four connected areas of expertise</title>
+        <desc id="diagram-desc">Business, data, engineering and governance connect to measurable outcomes.</desc>
+        <g fill="none" stroke="currentColor" stroke-width="1" opacity=".42">
+          <circle cx="160" cy="126" r="88" stroke-dasharray="3 7"/>
+          <circle cx="160" cy="126" r="65"/>
+          <path d="M160 31V221 M46 126H274 M92 58L228 194 M228 58L92 194"/>
+          <circle cx="160" cy="126" r="31"/>
+        </g>
+        <g fill="currentColor"><circle cx="160" cy="38" r="5"/><circle cx="248" cy="126" r="5"/><circle cx="160" cy="214" r="5"/><circle cx="72" cy="126" r="5"/></g>
+        <circle cx="160" cy="126" r="9" fill="#9ee2c2"/>
+        <g fill="currentColor" font-size="10" text-anchor="middle" font-family="system-ui,sans-serif"><text x="160" y="17">BUSINESS</text><text x="283" y="113">DATA</text><text x="160" y="246">ENGINEERING</text><text x="37" y="113">GOVERNANCE</text></g>
+      </svg>
+      <p>From strategy to systems.<br>From systems to outcomes.</p>
+    </aside>
+  </section>
 
+  <section class="wrap section intro" id="about" aria-labelledby="about-title">
+    <div class="section-head"><p class="eyebrow">01 / APPROACH</p><h2 id="about-title">Technology is only useful when it works for people.</h2></div>
+    <div class="intro-body"><p>My experience spans fintech operations, cloud-solution research and Trust &amp; Safety. I work across business analysis, data integration, workflow automation and delivery — with a background in industrial engineering, AI and dental medicine coursework.</p><p>I care about the entire lifecycle: defining the right problem, building an appropriate solution, validating its limits and making it usable in the real world.</p></div>
+    <div class="cap-grid">
+      <article><span class="number">01</span><h3>Business transformation</h3><p>Operating models, KPI design, investment cases and cross-functional implementation.</p></article>
+      <article><span class="number">02</span><h3>Data &amp; analytics</h3><p>Data ingestion, modeling, BI, metric definitions and reproducible analysis.</p></article>
+      <article><span class="number">03</span><h3>AI &amp; automation</h3><p>Intelligent document processing, workflow orchestration, prototyping and evaluation.</p></article>
+      <article><span class="number">04</span><h3>Responsible delivery</h3><p>Data integrity, access boundaries, deterministic controls, human review and operational adoption.</p></article>
+    </div>
+  </section>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js" defer></script>
-    </head>
-    <body>
+  <section class="section wrap" id="lab" aria-labelledby="lab-title">
+    <div class="section-head"><p class="eyebrow">02 / INDEPENDENT LAB</p><h2 id="lab-title">Building in the open.</h2><p>Independent experiments, documented engineering decisions and lessons from testing.</p></div>
+    <article class="featured">
+      <div class="feature-copy">
+        <div class="tag-row"><span class="tag">Open source</span><span class="tag">Working proof of concept</span><span class="tag">2026</span></div>
+        <h3>ReconGuard<span class="accent">.</span></h3>
+        <p class="feature-lead">AI extracts. ReconGuard connects. Humans respond.</p>
+        <p>An AI-assisted security research prototype exploring how customer-support conversations can reveal organizational knowledge over time. It connects evidence across separate synthetic interactions and provides verification guidance without assuming that different requesters are the same person.</p>
+        <p class="small">Independently developed with AI-assisted engineering. Submitted to the Meta Global AI Developer Hackathon 2026 (Indie Developer Track); not among the announced main-track winners.</p>
+        <div class="actions"><a class="button primary" href="https://github.com/goblinfather/ReconGuard">Source &amp; documentation <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://www.youtube.com/watch?v=MOQbAkAuNbM">Watch demo <span aria-hidden="true">↗</span></a></div>
+        <a class="text-link" href="#reconguard-notes">Technical retrospective <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="feature-visual">
+        <div class="visual-label"><span>RECONGUARD / v3.2</span><span class="status-dot"></span></div>
+        <ol class="pipeline">
+          <li><span>01</span><div><strong>Semantic extraction</strong><small>Meta Muse Spark 1.3</small></div></li>
+          <li><span>02</span><div><strong>Evidence validation</strong><small>Python · source-grounded checks</small></div></li>
+          <li><span>03</span><div><strong>Organization Exposure Ledger</strong><small>Cross-interaction evidence</small></div></li>
+          <li><span>04</span><div><strong>Explicit risk policy</strong><small>Deterministic evaluation</small></div></li>
+          <li><span>05</span><div><strong>Operator guidance</strong><small>Human verification</small></div></li>
+        </ol>
+        <div class="metric-grid"><div><strong>127</strong><small>Regression tests passed</small></div><div><strong>4</strong><small>Synthetic interactions</small></div><div><strong>21</strong><small>Recorded observations</small></div></div>
+        <p class="fineprint">Submission baseline, v3.2. These counts establish functional behavior, not general detection accuracy or production effectiveness.</p>
+      </div>
+    </article>
+    <article class="retrospective" id="reconguard-notes">
+      <div><p class="eyebrow">ENGINEERING NOTES / NOV 2026</p><h3>Building proves feasibility. Evaluation tests effectiveness.</h3><p>My biggest lesson from ReconGuard was the difference between a functioning prototype, validated security performance and actual user value.</p></div>
+      <div class="note-grid">
+        <details open><summary>01 — Architecture decisions</summary><p>Separate LLM observation extraction from deterministic policy evaluation. Validate quotations and speaker attribution; maintain an organization-level exposure history instead of making unsupported identity claims. Preserve unassessed states when analysis fails.</p></details>
+        <details><summary>02 — What the prototype demonstrated</summary><p>Four synthetic interactions were processed using recorded live Meta API results. Regression testing covered verification, policy behavior, retries and replay. The risk sequence reproduced as designed; one detailed fragment expectation did not match. This is not a generalized accuracy estimate.</p></details>
+        <details><summary>03 — What is not yet established</summary><p>Real-world detection accuracy, false-positive rates, live contact-center integrations and operator effectiveness remain unvalidated. The prototype does not establish that attacks are prevented or that workload is reduced.</p></details>
+        <details><summary>04 — Next research questions</summary><p>Expand independent evaluation data, compare keyword and LLM baselines, measure evidence grounding, latency and cost, and test whether operator guidance improves decision quality and reduces unnecessary burden.</p></details>
+      </div>
+    </article>
+  </section>
 
-        <!-- Navbar -->
-        <nav id="navbar">
-            <div class="navbar__logo">
-                <i class="fas fa-scroll"></i>
-                <a href="#">Daniel</a>
-            </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__menu__item" data-link="#home">Home</li>
-                    <li class="navbar__menu__item" data-link="#about">About</li>
-                    <li class="navbar__menu__item" data-link="#skills">Skills</li>
-                    <li class="navbar__menu__item" data-link="#work">My work</li>
-                    <li class="navbar__menu__item" data-link="#testimonial">Testimonial</li>
-                    <li class="navbar__menu__item" data-link="#contact">Contact</li>
-                </ul>
-            <!-- Toggle button -->
-            <button class="navbar__toggle-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>    
-        <!-- Home -->
-        <section id="home">
-            <div class="home__container">
-                <img 
-            src="images/profile.jpeg" 
-            alt="Daniel's profile photo" 
-            class="home__avatar"
-            />
-            <h1 class="home__title">Hello, <br />I am Dream Coder</h1>
-            <h2 class="home__description">Frontend Data Analyst</h2>
-            <button class="home__contact">Contact Me</button>
-            </div>
-        </section>
-        <!-- about  -->
-        <section id="about" class="section section__container">
-        <h1>About me</h1>
-        <p>Currently work as a QA(Quality assurance) Data operation sepcialist in Google Trust & Safety.</p>
-        <div class="about__majors"> 
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <div class="major__title">Front-end</div>
-                <div class="major__description">
-                    HTML, CSS, Javascript
-                </div>
-            </div>
+  <section class="section wrap" id="work" aria-labelledby="work-title">
+    <div class="section-head"><p class="eyebrow">03 / SELECTED PROFESSIONAL WORK</p><h2 id="work-title">From operational friction to practical solutions.</h2><p>High-level summaries of enterprise work; client data, internal designs and non-public metrics are intentionally omitted.</p></div>
+    <div class="work-grid">
+      <article class="work-card"><div class="card-meta"><span>FINTECH / 2025–26</span><span class="state delivered">Operational use</span></div><h3>Regulated workflow automation</h3><p>Developed and validated tools for data gathering, transaction parsing, consolidation and recalculation. Supported troubleshooting and handover to operational users.</p><p class="stack">Python · Data validation · Operational handover</p></article>
+      <article class="work-card"><div class="card-meta"><span>CUSTOMER EXPERIENCE / 2025–26</span><span class="state delivered">Production optimization</span></div><h3>Conversational AI &amp; analytics</h3><p>Supported chatbot integration and optimization, performance evaluation and operational reporting. Connected technical decisions to customer experience, efficiency and vendor economics.</p><p class="stack">Analytics · AI feasibility · KPI design · BI</p></article>
+      <article class="work-card"><div class="card-meta"><span>OPERATIONS / 2025–26</span><span class="state delivered">Operational use</span></div><h3>Document workflow engineering</h3><p>Developed and customized OCR and document-management workflows to reduce manual processing and consolidate fragmented document channels.</p><p class="stack">Python · OCR · Paperless-ngx · Workflow automation</p></article>
+      <article class="work-card"><div class="card-meta"><span>ENTERPRISE DATA / 2026</span><span class="state proposed">Architecture proposal</span></div><h3>Unified data &amp; AI readiness</h3><p>Proposed a governed, reusable data foundation with phased ingestion, shared definitions, lineage, access control and clear ownership. Designed the foundation for analytics and future AI use cases.</p><p class="stack">Data architecture · RBAC · Metadata · Integration</p></article>
+      <article class="work-card"><div class="card-meta"><span>INTELLIGENT AUTOMATION / 2026</span><span class="state proposed">Design &amp; PoC</span></div><h3>AI-enabled document processing</h3><p>Designed a workflow combining vision-language extraction, deterministic rules, orchestration and confidence-based human review. Full production rollout was not completed.</p><p class="stack">AWS Bedrock · n8n · Python · Human-in-the-loop</p></article>
+      <article class="work-card"><div class="card-meta"><span>CLOUD / 2022–24</span><span class="state">Research &amp; enablement</span></div><h3>Cloud solution research</h3><p>Translated business requirements, market research and technical information into structured solution narratives and executive-ready materials across multiple industries.</p><p class="stack">Google Cloud · Research · Solution strategy</p></article>
+    </div>
+  </section>
 
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-chart-bar"></i>
-                </div>
-                <div class="major__title">Data-Analytics</div>
-                <div class="major__description">
-                    Google Analytics SQL, Google sheets <br /> Data crawling, Data modeling, Data visualization
-                </div>
-            </div>
-            
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-user-shield"></i>
-                </div>
-                <div class="major__title">Trust&Safety</div>
-                <div class="major__description">
-                    Data Organization and Data Opertion <br /> proofreading and performs initial format <bl/>proofing of documents
-                </div>
-            </div>  
-        </div>
-        <div class="about__jobs">
-            <div class="job">
-                <i class="fab fa-google"></i>
-                <div class="job__description"></div>
-                <p class="job__name">
-                    QA Data Operation Sepcialist
-                </p>
-                <p class="job__period">
-                    2019 April - Until now
-                </p>
-            </div>
-            
-            <div class="job">
-                <i class="fas fa-plane"></i>
-                <div class="job__description"></div>
-                <p class="job__name">
-                    Ground staff in Malaysia Airline
-                </p>
-                <p class="job__period">
-                    2018 Jun - 2019 Feb
-                </p>
-            </div>
+  <section class="section wrap" id="experience" aria-labelledby="experience-title">
+    <div class="section-head"><p class="eyebrow">04 / PROFESSIONAL JOURNEY</p><h2 id="experience-title">A cross-disciplinary career.</h2><p>Seven years of experience across operations, technology and policy-sensitive environments.</p></div>
+    <div class="journey-grid">
+      <div class="timeline">
+        <article><p class="time">OCT 2024 — PRESENT</p><h3>Paidy</h3><p class="position">Business Operations Analyst</p><p>Expanded scope across strategy, data integration, automation and AI enablement. Cross-functional delivery with operations, engineering, data and business stakeholders.</p></article>
+        <article><p class="time">OCT 2022 — OCT 2024</p><h3>Cognizant</h3><p class="position">Programmer Analyst · Cloud Solution Research</p><p>Supported Google Cloud-related solution research, sales enablement and digital-transformation initiatives.</p></article>
+        <article><p class="time">APR 2019 — SEP 2022</p><h3>Adecco</h3><p class="position">Trust &amp; Safety Policy Operations Vendor</p><p>Supported Google-related policy workflows, quality analysis and operational feedback in a multilingual environment.</p></article>
+      </div>
+      <div class="education">
+        <h3>Education &amp; credentials</h3>
+        <div class="edu-item"><strong>B.Eng., Industrial Engineering</strong><p>Korea National Open University · 2026</p><p>AI Core Micro-major · University President’s Academic Excellence Award, Spring 2026</p></div>
+        <div class="edu-item"><strong>Dental medicine coursework</strong><p>National University, Manila · 2011–2013</p></div>
+        <div class="edu-item"><strong>Selected certifications</strong><p>AWS Cloud Practitioner · Azure Fundamentals · Azure Data Fundamentals · Power BI Data Analyst Associate</p></div>
+        <div class="edu-item"><strong>Languages</strong><p>Korean (native) · Japanese (professional, JLPT N1) · English (professional) · Chinese (intermediate, HSK 4)</p></div>
+      </div>
+    </div>
+    <div class="toolkit"><p class="eyebrow">TECHNICAL TOOLKIT</p><div class="tag-row"><span class="tag">Python</span><span class="tag">SQL / MySQL</span><span class="tag">Looker Studio</span><span class="tag">Power BI</span><span class="tag">GA4</span><span class="tag">n8n</span><span class="tag">Playwright</span><span class="tag">AWS</span><span class="tag">Google Cloud</span><span class="tag">Azure</span><span class="tag">LLM evaluation</span><span class="tag">OCR</span></div></div>
+  </section>
 
-            <div class="job">
-                <i class="fas fa-fighter-jet"></i>
-                <div class="job__description"></div>
-                <p class="job__name">
-                    Sergent in Korea Airforce
-                </p>
-                <p class="job__period">
-                    2016 Apr - 2018 Apr
-                </p>
-            </div>
-        </div>
-        </section>
-
-
-        <!-- skills -->
-        <section id="skills"class="section">
-        <div class="section__container">
-            <h1>Skills</h1>
-            <h2>Skills & Attributes</h2>
-                <p>
-            Experience with all phases of the software life-cycle. Passion for learning new technologies. <bl/>Capable of working within a team environment and independently. Ability to plan and time schedule, work under <bl/>strick time pressure and adapt quickly when needed.
-                </p>
-            <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 99%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>CSS</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 99%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>Javascript</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"style="width: 60%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>Google Analytics</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill_description">
-                        <span>SQL</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value" style="width: 50%;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>MYSQL</span></li>
-                        <li><span>Google-Cloud, Analytics and Adsense</span></li>
-                        <li><span>Exel & Spread sheets</span></li>
-                        <li><span>Sketch app(Procreate)</span></li>
-                    </ul>
-                </div>
-                <div class="ect">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>Japanese(JLPT level 2)</span></li>
-                        <li><span>English(Toeic 895)</span></li>
-                        <li><span>Chinese(HSK level 4)</span></li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-        </div>
-        
-        </section>
-
-        <!-- work -->
-        <section id="work"class="section">
-            <div class="section__container">
-                <h1>My work</h1>
-                <h3>Projects</h3>
-                <div class="work__categories">
-                    <button class="category__btn selected" data-filter="*">
-                        All <span class="category__count">3</span>
-                    </button>
-                    <button class="category__btn" data-filter="webpage">
-                        Webpage <span class="category__count">1</span>
-                    </button>
-                    <button class="category__btn" data-filter="data-analytics">
-                        Data-analytics <span class="category__count">1</span>
-                    </button>
-                    <button class="category__btn" data-filter="etc">
-                        Etc <span class="category__count">1</span>
-                    </button> 
-                </div>
-            
-                <div class="work__projects">
-                    <a href="https://github.com/goblinfather/Portfolio" 
-                    class="project"
-                    target="blank"
-                    data-type="webpage"
-                    >
-
-                    <img
-                        class="project__img" 
-                        src="images/projects/macbook.png"
-                        alt="Portfolio"
-                        class="project__img"/>
-
-                    <div class="project__description">
-                        <h3>Portfolio Site</h3>
-                        <span> Coding with HTML, Css and Javascript</span>
-                    </div>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- testimonial -->
-        <section id="testimonial"class="section">
-        <div class="section__container">
-            <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
-            <div class="testimonial">
-                <div class="testimonial">
-                    <img src="images/testimonial/takizawa.jpg" 
-                    alt="People" 
-                    class="testimonial__avatar"
-                    />
-                    <div class="testimoial__speech-bubble">
-                        <p>It is my pleasure to recommend Mr. Taehun Ki for employment with your organization.
-                            Although I have known Mr. Ki for a short term during which time he has worked as a customer service agent for our
-                            flight operation, he has made a tremendous contribution to our company. 
-                            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG3r1wOXsxilgAAAX2WHRxw91_iX6cSaD5MxU3fsLUJ2N2QWBNytzLetefNyr0i4KgYnGARn2IMY4vYpvlemBITocOZrobLojChqNnbW354w_IpPaGdWHpoywZdtMgvSGq3vQw=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdaniel-ki-151109173%2F"
-                            target="blank"> <b>More from linkedin</b></a></p>
-                        <p class="name">
-                            <a href="https://www.linkedin.com/in/takahiro-takizawa-925ab093/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABPq6C0BHwRwyNwtmbCV65-fjDVTJ4kJ8dA"
-                            class="testimonial"
-                            target="blank"> Takahiro Takizawa</a>  Assistant Station Head at Malaysia Airlines
-    
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial">
-                    <div class="testimoial__speech-bubble">
-                        <p>Tae Hun exhibited a number of strengths to offer an employer. Since I have
-                            known him, I know he is already interested in exploring the world to gain broader perspectives about cultural
-                            understanding. Moreover, he is an excellent team player. I still remember how he can contribute effectively in
-                            many group activities and how he also displayed empathy as a leader and good listening skills among his peers
-                            during classroom discussions.<a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG3r1wOXsxilgAAAX2WHRxw91_iX6cSaD5MxU3fsLUJ2N2QWBNytzLetefNyr0i4KgYnGARn2IMY4vYpvlemBITocOZrobLojChqNnbW354w_IpPaGdWHpoywZdtMgvSGq3vQw=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdaniel-ki-151109173%2F"
-                            target="blank"> <b>More from linkedin</b></a></p>
-                        <p class="name">
-                            <a href="https://m.facebook.com/profile.php?id=809607496"
-                            class="testimonial"
-                            target="blank"> Nikki Dagamac</a> Professor of Centro Escolar University
-                        </p>
-                    </div>
-                    <img src="images/testimonial/nikk.jpg" 
-                    alt="People" 
-                    class="testimonial__avatar"
-                    />
-                </div>
-            </div>
-        </div>
-        
-        </section>
-
-        <!-- contact -->
-        <section id="contact"class="section">
-        <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">thkee2004@gmail.com</h2>
-        <div class="contact__links">
-            <a href="https://github.com/goblinfather?tab=repositories" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/daniel-ki-151109173/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
-        <p class="contact__rights">2021 Daniel Ki All rights reserved 
-        </p>
-        </section>
-        <!-- arrow up -->
-        <button class="arrow-up">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-    </body>
+  <section class="statement section" aria-label="Technology philosophy"><div class="wrap"><p class="eyebrow">05 / PRINCIPLE</p><blockquote>Define the evidence<br>before building the claim<span>.</span></blockquote><p>Build for people. Measure what matters. Make uncertainty visible.</p></div></section>
+  <section class="section wrap contact" id="contact"><div><p class="eyebrow">06 / CONNECT</p><h2>Let's talk about what technology can actually solve.</h2><p>Tokyo, Japan · Business transformation · Data &amp; AI</p></div><div class="actions"><a class="button primary" href="https://www.linkedin.com/in/-ops/">Connect on LinkedIn <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://github.com/goblinfather">GitHub <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>© 2026 Taehun Ki</span><span>Independent professional portfolio</span><a href="#top">Back to top ↑</a></div></footer>
+</body>
 </html>
